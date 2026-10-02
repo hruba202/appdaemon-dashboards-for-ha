@@ -1,4 +1,4 @@
-# appdaemon-dashboards-for-ha
+# appdaemon-panely(dashboards)-pro-homeassistanta
 konfigurace panelů pro ha v appdaemon
 jednotlive dashboard tvori dohromady komplexni ovladaci panel,vyuzivam na dotykovem displeji kde mi bezi Touchkio
 vytvoreno podle navodu na strankach appdaemon,github/appdaemon,neco bylo treba upravit/aktualizovat,vse funguje(nutne pouzit vlastni entity)
