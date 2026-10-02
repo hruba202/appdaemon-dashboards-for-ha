@@ -22,4 +22,17 @@ Created based on the AppDaemon/GitHub documentation; some adjustments/updates we
 - etc.
 
 
-images/controls.png
+<img width="1049" height="887" alt="mainpanel" src="https://github.com/user-attachments/assets/fcef3fcc-9d1d-442a-a075-b230e4bb2ad9" />
+
+<img width="1803" height="901" alt="ma" src="https://github.com/user-attachments/assets/dd8006f8-4646-4c37-b158-70a0fbb159c9" />
+
+<img width="1071" height="911" alt="pocasi" src="https://github.com/user-attachments/assets/c218a646-0ece-4be9-90d0-e141cc9a01ff" />
+
+<img width="1133" height="889" alt="passage" src="https://github.com/user-attachments/assets/731be302-59f8-4e01-b7df-a6fdfa1e7ca2" />
+
+<img width="1440" height="887" alt="owv" src="https://github.com/user-attachments/assets/125f6fe8-b1f6-43a8-952c-76d429e3734e" />
+
+<img width="1074" height="895" alt="secure" src="https://github.com/user-attachments/assets/dde5e35b-dfe7-4549-bd65-be73711e12df" />
+
+
+
