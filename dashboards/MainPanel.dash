@@ -81,7 +81,7 @@ title2:
   widget_style: "background: #1E1E24 !important; overflow: hidden; padding-bottom: 0px !important;"
   title_style: "color: #FFFFFF !important; font-size: 80%; font-weight: bold; line-height: 1.1;"
   artist_style: "color: #E0E0E0 !important; font-size: 75%; line-height: 1.1;"
-  # Tento styl zasáhne přímo kontejner s ovládacími prvky a posune ho výše
+
   control_style: "margin-top: -25px !important;"
 
 office_light:
