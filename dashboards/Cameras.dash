@@ -1,0 +1,16 @@
+# Main arguments, all optional
+#
+title: Passage
+widget_dimensions: [122, 120]
+widget_margins: [5, 5]
+columns: 10
+#skin = green
+#
+# Includes (Optional)
+#
+layout:
+    - include: camera_panel
+    - spacer(10x1)
+    - spacer(10x1)    
+    - include: rooms_panel
+    - include: bottom_panel

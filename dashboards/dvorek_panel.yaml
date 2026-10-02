@@ -1,0 +1,15 @@
+#
+# Main arguments, all optional
+#
+title: Dvorek
+widget_dimensions: [122, 120]
+widget_margins: [5, 5]
+columns: 10
+#
+layout:
+    - switch.dvorek, switch.dvorek_led
+    - light.dvorek_led_svetlo, light.dvorek_zarovka
+    - include: bottom_panel
+#skin = green
+#
+# Includes (Optional)

@@ -1,0 +1,18 @@
+#
+# Main arguments, all optional
+#
+title: Přehled
+widget_dimensions: [122, 120]
+widget_margins: [5, 5]
+columns: 12
+#
+layout:
+    - spacer(3x1), sensor.th_kuchyne_ble_teplota, sensor.th_kuchyne_ble_vlhkost_vzduchu
+    - spacer(12x1)
+    - spacer(3x1), switch.kuchyne_hlavni, switch.kuchyne_led,  switch.zasuvka_mycka, spacer(1x1), cover.zaluzie_1
+    - spacer(3x1), light.kuchyne_lampa
+    - spacer(4x1), binary_sensor.presense_kuchyne_radar_target, binary_sensor.espresense_kitchen_connectivity, sensor.espresense_kitchen_count
+    - include: bottom_panel
+#skin = green
+#
+# Includes (Optional)

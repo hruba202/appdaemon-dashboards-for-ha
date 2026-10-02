@@ -1,0 +1,15 @@
+# Main arguments, all optional
+#
+title: Dvorek
+widget_dimensions: [122, 120]
+widget_margins: [5, 5]
+columns: 10
+#skin = green
+#
+# Includes (Optional)
+#
+layout:
+    - include: camera3_panel
+    - spacer(10x1)
+    - spacer(10x1)
+    - include: dvorek_panel

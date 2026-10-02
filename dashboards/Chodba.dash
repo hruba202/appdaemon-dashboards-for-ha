@@ -1,0 +1,12 @@
+# Main arguments, all optional
+#
+title: Chodba
+widget_dimensions: [122, 120]
+widget_margins: [5, 5]
+columns: 10
+#skin = green
+#
+# Includes (Optional)
+#
+layout:
+    - include: chodba_panel

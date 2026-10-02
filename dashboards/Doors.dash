@@ -1,0 +1,16 @@
+#
+# Main arguments, all optional
+#
+title: Garage & Basement
+widget_dimensions: [122, 120]
+widget_margins: [5, 5]
+columns: 8
+#skin = green
+#
+# Includes (Optional)
+#
+layout:
+    - binary_sensor.vychod_contact, binary_sensor.vchod_contact
+    - lock.lock_pro_d3_matter, lock.zamek_vrata_2
+    - include: rooms_panel
+    - include: bottom_panel

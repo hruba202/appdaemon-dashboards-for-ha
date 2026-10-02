@@ -1,0 +1,16 @@
+#
+# Main arguments, all optional
+#
+title: Chodba
+widget_dimensions: [122, 120]
+widget_margins: [5, 5]
+columns: 10
+#
+layout:
+    - switch.chodba, switch.chodba_hlavni
+    - light.chodba_night, light.hall_chodba_sonoff_10022d61a9_effect_sound, light.hall_chodba_sonoff_10022d61a9_effect_light, light.hall_chodba_sonoff_10022d61a9_effect_status
+ 
+    - include: bottom_panel
+#skin = green
+#
+# Includes (Optional)

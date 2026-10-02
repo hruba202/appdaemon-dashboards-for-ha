@@ -1,0 +1,28 @@
+#
+# Main arguments, all optional
+#
+title: Home Assistant
+widget_dimensions: [122, 120]
+widget_margins: [5, 5]
+columns: 14
+
+ha_frame:
+    widget_type: iframe
+    title: Home Assistant
+    #refresh: 10
+    url_list:
+      - http://192.168.0.36:8123
+
+#
+# Includes (Optional)
+#
+layout:
+   - ha_frame(14x8)
+   - spacer(12x1)
+   - spacer(12x1)   
+   - spacer(12x1)
+   - spacer(12x1) 
+   - spacer(12x1)  
+   - spacer(12x1) 
+   - spacer(12x1)  
+   - include: bottom1_panel
