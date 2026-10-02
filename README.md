@@ -20,3 +20,6 @@ Created based on the AppDaemon/GitHub documentation; some adjustments/updates we
 - Main panel with player
 - Camera panel
 - etc.
+
+
+images/controls.png
