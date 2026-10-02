@@ -1,0 +1,26 @@
+weather_frame:
+
+    widget_type: iframe
+
+    title: Radar
+
+    refresh: 300
+
+    frame_style: ""
+
+    url_list:
+        - http://192.168.0.36:8123/dashboard-mushroom/6
+
+
+
+layout:
+
+    - weather_frame(4x5), sensor.pirateweather_minutely_summary(2x1), sensor.pirateweather_hourly_summary(2x1)
+
+    - sensor.pirateweather_daily_summary(2x1), sensor.openweathermap_pressure(2x1)
+
+    - sensor.pirateweather_temperature, sensor.openweathermap_feels_like_temperature, sensor.pirateweather_nearest_storm_distance, sensor.openweathermap_condition
+
+    - sensor.openweathermap_wind_speed, sensor.openweathermap_wind_bearing, sensor.pirateweather_humidity, sensor.openweathermap_wind_gust
+
+    - sensor.pirateweather_visibility, sensor.openweathermap_precipitation_kind, sensor.openweathermap_rain, sensor.openweathermap_cloud_coverage 

@@ -1,0 +1,20 @@
+#
+# Main arguments, all optional
+#
+title: Secure
+widget_dimensions: [122, 120]
+widget_margins: [5, 5]
+columns: 12
+#skin = green
+#
+# Includes (Optional)
+#
+layout:
+    - binary_sensor.presense_kuchyne_radar_moving_target, binary_sensor.radar_prujezd_moving_target, binary_sensor.pohyb_prujezd_2_occupancy, binary_sensor.radar5g_presence, sensor.radar5g_presence_state, binary_sensor.radar_presence
+    - binary_sensor.pohyb_prujezd_occupancy,binary_sensor.smart_presence_sensor_obsazenost, binary_sensor.radar_prujezd_presence, binary_sensor.everything_presence_lite_occupancy
+    - sensor.huskylens_huskylens_id, sensor.huskylens_huskylens_height, sensor.huskylens_huskylens_width, sensor.huskylens_huskylens_x, sensor.huskylens_huskylens_y, sensor.huskylens_huskylens_command
+    - lock.zamek_vrata, binary_sensor.vychod_contact
+    - spacer(12x1)
+    - include: rooms_panel
+    - include: bottom_panel
+

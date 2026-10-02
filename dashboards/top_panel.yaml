@@ -1,0 +1,83 @@
+﻿side_temperature:
+    widget_type: sensor
+    title: Temperature
+    units: "&deg;C"
+    precision: 0
+    entity: sensor.th_obyvak_temperature
+
+weather:
+    widget_type: weather
+    units: "&deg;C"
+
+side_humidity:
+    widget_type: gauge
+    title: Humidity
+    max: 100
+    min: 0
+    units: "%"
+    entity: sensor.th_obyvak_humidity
+
+ani_presence:
+    widget_type: device_tracker
+    title: Anni
+    device: anifoun
+    enable: 1
+#    icon_on: fa-male
+#    icon_off: fa-male
+#    icon_style_active: "color: #4bcdea"
+
+rozi_presence:
+    widget_type: device_tracker
+    title: Rozi
+    enable: 1
+#    icon_style_active: "color: #ea4b82"
+#    icon_on: fa-female
+#    icon_off: fa-female
+    device: rozafoun
+
+mode:
+    widget_type: sensor
+    title: House Mode
+    text_style: "text-transform: uppercase;font-size: 300%"
+    entity: input_select.house_mod
+   # sub_entity: sensor.dark_day
+   # sub_entity_map:
+    #  0: ""
+     # 1: "dark"
+
+passage_motion:
+    widget_type: binary_sensor
+    title: Prujez
+    entity: binary_sensor.pohyb_prujezd
+
+passage:
+    widget_type: binary_sensor
+    title: Prujezd
+    entity: binary_sensor.vychod_contact
+    icon_on: fa-car
+    icon_off: fa-car
+    icon_style_active: $style_active_warn
+
+alarm:
+    widget_type: alarm
+    entity: alarm_control_panel.home
+    title: Alarm
+    state_style: "font-size: 250%;"
+    title_style: "color: white"
+
+anicka:
+  widget_type: sensor
+  entity: sensor.anicka
+  title: Anicka
+  title2: Anni
+
+rozalka:
+  widget_type: sensor
+  entity: sensor.rozalka
+  title: Rozalka
+  title2: Rozi
+
+layout:
+    - clock(2x1), weather(2x2), anicka, rozalka, ani_presence, rozi_presence
+    - mode(2x1), alarm(2x1), lock.front_door_lock_locked, passage
+
