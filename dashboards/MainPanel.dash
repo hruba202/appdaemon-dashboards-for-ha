@@ -101,7 +101,7 @@ summary:
     sensors:
         icon: sensor.pirateweather_icon
         temperature: sensor.openweathermap_temperature
-        # OPRAVENO: Přidáno druhé 'p'. Teď už kompilátor nezkolabuje.
+       
         apparent_temperature: sensor.openweathermap_feels_like_temperature
         humidity: sensor.openweathermap_humidity
         pressure: sensor.pirateweather_pressure
