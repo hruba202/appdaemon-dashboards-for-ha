@@ -11,7 +11,7 @@ ha_frame:
     title: Music Assistant
     #refresh: 5
     url_list:
-      - http://192.168.0.186:8095
+      - http://192.168.xx.xx:8095
 
 #
 # Includes (Optional)
