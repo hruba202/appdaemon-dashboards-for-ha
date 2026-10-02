@@ -1,0 +1,163 @@
+# ==========================================
+# DEFINICE WIDGETŮ (Absolutně netknuté)
+# ==========================================
+
+mode:
+  widget_type: sensor
+  entity: input_select.house_mod
+  # Základní styl widgetu (velikost a vycentrování)
+  widget_style: "font-weight: bold; font-size: 160%;"
+  
+  # SPRÁVNÉ ŘEŠENÍ: Mapování barev pozadí v závislosti na stavu
+  # HADashboard pro tento účel u senzorů používá specifické mapování stylů
+  day_style: "background: #B8860B !important; color: #FFFFFF !important;"
+  rano_style: "background: #DAA520 !important; color: #FFFFFF !important;"
+  vecer_style: "background: #1A1C20 !important; color: #FFFFFF !important;"
+  noc_style: "background: #111215 !important; color: #FFFFFF !important;"
+
+
+
+
+label:
+  widget_type: label
+  text: "**202**"
+  # Přesně jako u holkama: widget_style obarví pozadí celého obdélníku 2x1
+  widget_style: "background: #4682B4 !important;"
+  # Zde vnutí sytě bílou barvu textu, aby na modré perfektně kontrastoval
+  text_style: "color: #FFFFFF !important; font-weight: bold; font-size: 130%;"
+
+side_humidity:
+  widget_type: sensor
+  title: Vlhkost
+  entity: sensor.th_obyvak_humidity
+  # OPRAVENO: Pozadí nastaveno na tmavší pastelovou modrou (#2E4A62)
+  widget_style: "background: #2E4A62 !important;"
+  # Texty a hodnoty vlhkosti (např. 45 %) budou čistě bílé a jasně čitelné
+  title_style: "color: #FFFFFF !important; font-weight: bold;"
+  value_style: "color: #FFFFFF !important;"
+
+ani_presence:
+  widget_type: device_tracker
+  title: Anni
+  device: anifoun
+  enable: 1
+  # CSS Úprava: Pozadí widgetu bude fialové (#8A2BE2) a text bude bílý
+  widget_style: "background: #8A2BE2;"
+  title_style: "color: white; font-weight: bold;"
+  state_style: "color: #E6E6FA;" # Jemná levandulová pro text stavu (Doma/Pryč)
+
+rozi_presence:
+  widget_type: device_tracker
+  title: Rozi
+  device: rozafoun
+  enable: 1
+  widget_style: "background: #FF69B4;"
+  title_style: "color: white; font-weight: bold;"
+  state_style: "color: #FFF0F5;"
+clock:
+    widget_type: clock
+    time_format: "24hr"
+    show_ampm: 0
+    date_format: "d. M. YYYY"
+    widget_style: "font-size: 120%;"
+pocasi_domov:
+
+
+title2:
+  widget_type: media_player
+  title: Obývák
+  truncate_name: 25
+  truncate_artist: 20
+  entity: media_player.wavespin_mass
+  # OPRAVENO: Odstraněna pevná barva. Ponecháno pouze oříznutí a nulový okraj pro stabilitu.
+  widget_style: "overflow: hidden; padding-bottom: 0px !important;"
+  title_style: "color: #FFFFFF !important; font-size: 80%; font-weight: bold; line-height: 1.1;"
+  artist_style: "color: #E0E0E0 !important; font-size: 75%; line-height: 1.1;"
+  control_style: "margin-top: -25px !important;"
+
+
+
+  entity: media_player.wavespin_mass
+  widget_style: "background: #1E1E24 !important; overflow: hidden; padding-bottom: 0px !important;"
+  title_style: "color: #FFFFFF !important; font-size: 80%; font-weight: bold; line-height: 1.1;"
+  artist_style: "color: #E0E0E0 !important; font-size: 75%; line-height: 1.1;"
+  # Tento styl zasáhne přímo kontejner s ovládacími prvky a posune ho výše
+  control_style: "margin-top: -25px !important;"
+
+office_light:
+  widget_type: switch
+  title: Obyvák
+  title2: Switch
+  entity: switch.obyvak_hlavni
+
+office_light_switch:
+  widget_type: switch
+  title: Soundlight
+  title2: Switch
+  entity: switch.livingroom_sound_1
+
+summary:
+    widget_type: weather
+    sensors:
+        icon: sensor.pirateweather_icon
+        temperature: sensor.openweathermap_temperature
+        # OPRAVENO: Přidáno druhé 'p'. Teď už kompilátor nezkolabuje.
+        apparent_temperature: sensor.openweathermap_feels_like_temperature
+        humidity: sensor.openweathermap_humidity
+        pressure: sensor.pirateweather_pressure
+        wind_speed: sensor.pirateweather_wind_speed
+        wind_bearing: sensor.openweathermap_wind_bearing
+        forecast_icon: sensor.pirateweather_icon_1d
+
+
+
+
+porch_sensor:
+  widget_type: binary_sensor
+  entity: binary_sensor.vychod_contact
+  title: Vchod
+  title2: Kontakt
+
+scene_office_on:
+  widget_type: scene
+  title: Office ON
+  entity: scene.office_on
+
+office_off:
+  widget_type: switch
+  title: Koupelna
+  entity: switch.koupelna
+
+hall:
+  widget_type: switch
+  title: Chodba
+  entity: switch.chodba
+
+heating:
+  widget_type: switch
+  title: Topení
+  entity: input_boolean.heating
+
+passage:
+  widget_type: switch
+  title: Průchod
+  entity: switch.prujezd
+
+
+# ==========================================
+# FINÁLNÍ ROZLOŽENÍ (LAYOUT)
+# ==========================================
+layout:
+  - mode(2x1), label(3x1), side_humidity, ani_presence, rozi_presence
+  - clock(2x1), summary(2x2), scene_office_on, office_off, hall, office_light
+  
+  # OPRAVENO: Průchod (passage) je teď v mřížce vedle Vchodu (Šířka: 2 + 1 + 1 + 1 + 1 + 2 [Počasí] = 8)
+  - title2(2x2), heating, office_light_switch, porch_sensor, passage
+  
+  # OPRAVENO: Summary se posunulo na pozici 3 hned vedle volného místa pod přehrávačem (Šířka: 2 + 2 + 4 = 8)
+  - spacer(2x1), summary(2x1), spacer(4x1)
+  
+  - spacer(8x1)
+  - include: bottom_panel
+
+

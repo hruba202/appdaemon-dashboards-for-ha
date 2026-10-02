@@ -1,0 +1,15 @@
+#
+# Mai#
+# Main arguments, all optional
+#
+title: Průjezd
+widget_dimensions: [122, 120]
+widget_margins: [5, 5]
+columns: 10
+#
+layout:
+    - switch.prujezd, switch.powermeter, lock.lock_pro_d3_matter
+    - light.prujezd_zarovka
+    - binary_sensor.vychod_contact, binary_sensor.espresense_passage_connectivity, sensor.espresense_passage_count
+    - include: bottom_panel
+#

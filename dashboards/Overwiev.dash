@@ -1,0 +1,18 @@
+#
+# Main arguments, all optional
+#
+title: Průjezd
+widget_dimensions: [122, 120]
+widget_margins: [5, 5]
+columns: 10
+#
+layout:
+    - switch.prujezd, switch.chodba, switch.obyvak_hlavni, switch.kuchyne_hlavni, switch.koupelna, switch.dvorek, switch.zvuk_obyvak, switch.livingroom_sound_1, switch.detsky_pokoj_hlavni, switch.detsky_pokoj_lampa, switch.kuchyne_led
+    - spacer(8x1)
+    - light.sound_light_1_svetlo, light.sound_light_2_svetlo, light.sound_light_3_svetlo
+    - spacer(8x1)
+    - include: rooms_panel
+    - include: bottom_panel
+#skin = green
+#
+# Includes (Optional)

@@ -1,0 +1,38 @@
+﻿wlamp:
+    widget_type: light
+    title: Kuchyne lampa
+    entity: light.kuchyne_lampa
+    icon_on: mdi-lamp
+    icon_off: mdi-lamp
+    on_attributes:
+      brightness: 255
+      color_temp: 276
+
+downstairs_thermometer:
+    widget_type: climate
+    title: Termostat kotel
+    units: "&deg;F"
+    entity: climate.termostat_kotel
+
+upstairs_thermometer:
+    widget_type: sensor
+    title: Koupelna
+    units: "&deg;C"
+    entity: sensor.th_koupelna_temperature
+
+basement_thermometer:
+    widget_type: sensor
+    title: Detsky pokoj
+    units: "&deg;C"
+    entity: sensor.th_deti_temperature
+
+light_level:
+    widget_type: sensor
+    title: Light Level
+    units: "lux"
+    precision: 0
+    shorten: 1
+    entity: sensor.radar_prujezd_bh1750_illuminance
+
+layout:
+    - wlamp, scene.downstairs_on, scene.downstairs_off, scene.downstairs_bright, upstairs_thermometer, downstairs_thermometer, basement_thermometer, light_level

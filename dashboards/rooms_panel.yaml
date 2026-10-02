@@ -1,0 +1,54 @@
+load_kitchen:
+    widget_type: navigate
+    title: Kuchyně
+    icon_inactive: mdi-chef-hat
+    dashboard: Kuchyne
+
+load_passage:
+    widget_type: navigate
+    title: Průjezd
+    icon_inactive: fa-bicycle
+    dashboard: Prujezd
+
+load_hall:
+    widget_type: navigate
+    title: Chodba
+    icon_inactive: mdi-radioactive
+    dashboard: Chodba
+
+load_livingroom:
+    widget_type: navigate
+    title: Obývák
+    icon_inactive: mdi-sofa
+    dashboard: Obyvak
+
+load_backyard:
+    widget_type: navigate
+    title: Dvorek
+    icon_inactive: mdi-watering-can
+    dashboard: Dvorek
+
+load_doors:
+    widget_type: navigate
+    title: Doors and Locks
+    icon_inactive: fa-lock
+    dashboard: Secure
+    #args:
+    #  timeout: 3
+    #  return: MainPanel
+
+load_system:
+    widget_type: navigate
+    title: System
+    icon_inactive: mdi-server
+    dashboard: System
+
+load_cameras:
+    widget_type: navigate
+    title: Cameras
+    icon_inactive: mdi-camera
+    dashboard: Cameras
+
+layout:
+  - load_backyard, load_kitchen, load_livingroom, load_passage, load_hall, load_doors, load_system, load_cameras
+

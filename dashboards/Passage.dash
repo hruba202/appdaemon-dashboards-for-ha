@@ -1,0 +1,18 @@
+#
+# Main arguments, all optional
+#
+title: Přehled
+widget_dimensions: [122, 120]
+widget_margins: [5, 5]
+columns: 12
+#
+layout:
+    - switch.prujezd, switch.chodba, switch.obyvak_hlavni, switch.kuchyne_hlavni, switch.koupelna, switch.dvorek, switch.wc, switch.zvuk_obyvak, switch.livingroom_sound_1, switch.detsky_pokoj_hlavni, switch.detsky_pokoj_lampa, switch.kuchyne_led
+    - light.kuchyne_lampa, light.wc_zarovka, light.kuchyne_lampa_zarovka
+    - light.sound_light_1_svetlo, light.sound_light_2_svetlo, light.sound_light_3_svetlo
+    - spacer(8x1)
+    - include: rooms_panel
+    - include: bottom_panel
+#skin = green
+#
+# Includes (Optional)
