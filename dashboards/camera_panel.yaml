@@ -1,0 +1,31 @@
+kamera4:
+    widget_type: camera
+    title: Kamera 4
+    entity: camera.kamera4
+    base_url: http://192.168.0.36:8123
+    refresh: 5
+   # stream: "off"
+    frame_style: ""
+
+
+
+kamera3:
+    widget_type: camera
+    title: Kamera 3
+    entity: camera.kamera3
+    base_url: http://192.168.0.36:8123
+    refresh: 10
+   # stream: on
+    frame_style: ""
+
+kamera2:
+    widget_type: camera
+    title: Kamera 2
+    entity: camera.kamera3
+    base_url: http://192.168.0.36:8123
+    refresh: 10
+   # stream: on
+    frame_style: ""
+
+layout:
+  - kamera4(3x2), kamera3(3x2), kamera2(3x2)
