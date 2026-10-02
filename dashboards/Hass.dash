@@ -11,7 +11,7 @@ ha_frame:
     title: Home Assistant
     #refresh: 10
     url_list:
-      - http://192.168.0.36:8123
+      - http://192.168.xx.xx:8123
 
 #
 # Includes (Optional)
