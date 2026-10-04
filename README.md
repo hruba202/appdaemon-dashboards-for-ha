@@ -31,7 +31,8 @@ ma
 pocasi/weather
 <img width="1071" height="911" alt="pocasi" src="https://github.com/user-attachments/assets/c218a646-0ece-4be9-90d0-e141cc9a01ff" />
 kamery/cameras
-<img width="1133" height="889" alt="passage" src="https://github.com/user-attachments/assets/731be302-59f8-4e01-b7df-a6fdfa1e7ca2" />
+<img width="1884" height="905" alt="cams1" src="https://github.com/user-attachments/assets/7a2f131d-293c-4d86-a51b-87bb073c61f1" />
+
 přehled/owerview
 <img width="1886" height="918" alt="ovw1" src="https://github.com/user-attachments/assets/4ddb47e2-510f-4c75-be82-83bcc0770c0b" />
 control
