@@ -1,0 +1,61 @@
+alias: Automatic day_mod selector
+description: Switch input_select.day_mod based on time of day
+triggers:
+  - at: '06:30:00'
+    trigger: time
+  - at: '10:00:00'
+    trigger: time
+  - at: '18:30:00'
+    trigger: time
+  - at: '21:30:00'
+    trigger: time
+actions:
+  - choose:
+      - conditions:
+          - condition: time
+            after: '06:30:00'
+            before: '10:00:00'
+        sequence:
+          - target:
+              entity_id:
+                - input_select.day_mod
+            data:
+              option: 🌅
+            action: input_select.select_option
+      - conditions:
+          - condition: time
+            after: '10:00:00'
+            before: '18:30:00'
+        sequence:
+          - target:
+              entity_id:
+                - input_select.day_mod
+            data:
+              option: ☀️
+            action: input_select.select_option
+      - conditions:
+          - condition: time
+            after: '18:30:00'
+            before: '21:30:00'
+        sequence:
+          - target:
+              entity_id:
+                - input_select.day_mod
+            data:
+              option: 🌇
+            action: input_select.select_option
+      - conditions:
+          - condition: or
+            conditions:
+              - condition: time
+                after: '21:30:00'
+              - condition: time
+                before: '06:30:00'
+        sequence:
+          - target:
+              entity_id:
+                - input_select.day_mod
+            data:
+              option: 🌙
+            action: input_select.select_option
+mode: single
