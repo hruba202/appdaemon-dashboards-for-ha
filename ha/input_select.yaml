@@ -1,0 +1,8 @@
+day_mod:
+  name: Day mod
+
+  options:
+    - "🌅"   # ráno (východ slunce)
+    - "☀️"   # den
+    - "🌇"   # večer (západ slunce)
+    - "🌙"   # noc
