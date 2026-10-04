@@ -1,3 +1,4 @@
+
 # appdaemon-panely(dashboards)-pro-homeassistanta
 konfigurace panelů pro ha v appdaemon
 jednotlive dashboard tvori dohromady komplexni ovladaci panel,vyuzivam na dotykovem displeji kde mi bezi Touchkio
@@ -32,7 +33,7 @@ pocasi/weather
 průjezd/passage
 <img width="1133" height="889" alt="passage" src="https://github.com/user-attachments/assets/731be302-59f8-4e01-b7df-a6fdfa1e7ca2" />
 přehled/owerview
-<img width="1440" height="887" alt="owv" src="https://github.com/user-attachments/assets/125f6fe8-b1f6-43a8-952c-76d429e3734e" />
+<img width="1886" height="918" alt="ovw1" src="https://github.com/user-attachments/assets/4ddb47e2-510f-4c75-be82-83bcc0770c0b" />
 control
 <img width="1074" height="895" alt="secure" src="https://github.com/user-attachments/assets/dde5e35b-dfe7-4549-bd65-be73711e12df" />
 
