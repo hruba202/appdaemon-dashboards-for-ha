@@ -25,7 +25,7 @@ Created based on the AppDaemon/GitHub documentation; some adjustments/updates we
 - etc
 
 main
-<img width="1049" height="887" alt="mainpanel" src="https://github.com/user-attachments/assets/fcef3fcc-9d1d-442a-a075-b230e4bb2ad9" />
+
 ma
 <img width="1803" height="901" alt="ma" src="https://github.com/user-attachments/assets/dd8006f8-4646-4c37-b158-70a0fbb159c9" />
 pocasi/weather
