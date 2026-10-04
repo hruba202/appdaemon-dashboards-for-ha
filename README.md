@@ -25,6 +25,7 @@ Created based on the AppDaemon/GitHub documentation; some adjustments/updates we
 - etc
 
 main
+<img width="1192" height="894" alt="main1" src="https://github.com/user-attachments/assets/0ab2d297-c7cf-4a52-a577-3923517d84a2" />
 
 ma
 <img width="1803" height="901" alt="ma" src="https://github.com/user-attachments/assets/dd8006f8-4646-4c37-b158-70a0fbb159c9" />
